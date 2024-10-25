@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blooming Delights Flower Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <h1>Blooming Delights</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about us .html">About</a></li>
+                <li><a href="Contact us.html">Contact</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li>
+                    <div class="cart-icon" id="cartIcon">
+                        🛒 <span class="cart-count">0</span>
+                    </div>
+                </li>
+                <li><button class="btn" id="loginBtn">Login</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Welcome to Blooming Delights</h2>
+            <p>Discover our beautiful collection of fresh flowers</p>
+        </section>
+
+        <section class="slideshow">
+            <div class="slides">
+                <img src="/featured pic 4.jpg" alt="Flower arrangement 1" class="slide active">
+                <img src="/feautred pic 5.jpg" alt="Flower arrangement 2" class="slide">
+                <img src="/featured pic 6.jpg" alt="Flower arrangement 3" class="slide">
+            </div>
+            <a class="prev" onclick="changeSlide(-1)">❮</a>
+            <a class="next" onclick="changeSlide(1)">❯</a>
+        </section>
+
+        <section class="customize-section">
+            <h2 class="customize-title">Explore Our Premium Blooms</h2>
+            <p class="customize-description">
+                Discover our handpicked selection of nature's finest flowers, each carefully chosen
+                to bring elegance and beauty to your special moments. Browse through our exclusive
+                collection or customize your perfect arrangement.
+            </p>
+            <div class="flower-categories">
+                <a href="/Rose.html" class="category-tag">Roses</a>
+                <a href="/Tulips.html" class="category-tag">Tulips</a>
+                <a href="/Lily.html" class="category-tag">Lilies</a>
+                <a href="/Orchid.html" class="category-tag">Orchids</a>
+            </div>
+        </section>
+
+        <section class="product-grid">
+            <div class="product-card">
+                <img src="rose 2.jpg" alt="Rose">
+                <h3>Rose</h3>
+                <p class="price">₹29.99</p>
+                <button class="btn add-to-cart" data-name="Rose Bouquet" data-price="29.99">
+                    Add to Cart
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="tulip.jpg" alt="Tulip">
+                <h3>Tulip</h3>
+                <p class="price">₹24.99</p>
+                <button class="btn add-to-cart" data-name="Tulip Arrangement" data-price="24.99">
+                    Add to Cart
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="lily.jpg" alt="Lily">
+                <h3>Lily</h3>
+                <p class="price">₹34.99</p>
+                <button class="btn add-to-cart" data-name="Lily Bouquet" data-price="34.99">
+                    Add to Cart
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="orchid.jpg" alt="Orchid">
+                <h3>Orchid</h3>
+                <p class="price">₹39.99</p>
+                <button class="btn add-to-cart" data-name="Orchid Plant" data-price="39.99">
+                    Add to Cart
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+            <p class="signup-link">Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Shopping Cart</h2>
+            <ul class="cart-items" id="cartItems"></ul>
+            <p>Total: ₹<span id="cartTotal">0.00</span></p>
+            <button class="btn" id="checkoutBtn">Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We deliver fresh flowers and bring joy to your special moments.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@bloomingdelights.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

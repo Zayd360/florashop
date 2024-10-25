@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rose.css">
+</head>
+<body>
+    <header>
+        <h1>Blooming Delights Flower Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about us .html">About</a></li>
+                <li><a href="Contact us.html">Contact</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li>
+                    <div class="cart-icon" id="cartIcon" onclick="openCart()">
+                        🛒 <span class="cart-count">0</span>
+                    </div>
+                </li>
+                <li><button class="btn" id="loginBtn">Login</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal">
+        <div class="cart-content">
+            <h2>Shopping Cart</h2>
+            <div class="cart-list">
+                <!-- Cart items will be added here dynamically -->
+            </div>
+            <div class="cart-total">
+                <p>Total: ₹<span id="cart-total-amount">0</span></p>
+            </div>
+            <div class="cart-buttons">
+                <button class="btn" onclick="checkout()">Checkout</button>
+                <button class="btn" onclick="closeCart()">Close</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Orchids Section -->
+    <section id="orchids">
+        <h2>Orchids</h2>
+        <div class="box-container">
+            <div class="box">
+                <img src="purple orchid.jpg" alt="Orchid 1">
+                <h3>Purple Orchids</h3>
+                <p>₹1000</p>
+                <button class="btn" onclick="addToCart('Mixed Orchids', 1000)">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="pink orchid.jpg" alt="Orchid 2">
+                <h3>Pink Orchids</h3>
+                <p>₹1200</p>
+                <button class="btn" onclick="addToCart('Lavish Red Orchids', 1200)">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="white orchid.jpg" alt="Orchid 3">
+                <h3>White Orchid</h3>
+                <p>₹1900</p>
+                <button class="btn" onclick="addToCart('Single Orchid', 1900)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="product.js"></script>
+</body>
+</html

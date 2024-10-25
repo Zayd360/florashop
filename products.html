@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blooming Delights Flower Store</title>
+    <link rel="stylesheet" href="products.css">
+
+</head>
+<body>
+    <header>
+        <h1>Blooming Delights Flower Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about us .html">About</a></li>
+                <li><a href="Contact us.html">Contact</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li>
+                    <div class="cart-icon" id="cartIcon" onclick="openCart()">
+                        🛒 <span class="cart-count">0</span>
+                    </div>
+                </li>
+        </nav>
+    </header>
+    <!-- Roses Section -->
+    <section id="roses">
+        <h2>Roses</h2>
+        <div class="box-container">
+            <div class="box">
+                <img src="/pink roses.jpg" alt="Rose 1">
+                <h3>Pink Roses</h3>
+                <p>₹1000</p>
+                <button class="btn" onclick="addToCart('Mixed Roses', 1000)">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="/Lavish Red Roses.jpg" alt="Rose 2">
+                <h3>Lavish Red Roses</h3>
+                <p>₹900</p>
+                <button class="btn" onclick="addToCart('Lavish Red Roses', 900)">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="\White Roses.jpg" alt="Rose 3">
+                <h3>White Roses</h3>
+                <p>₹1500</p>
+                <button class="btn" onclick="addToCart('Single Rose', 1500)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <!-- Tulips Section -->
+    <section id="tulips">
+        <h2>Tulips</h2>
+        <div class="box-container">
+            <div class="box">
+                <img src="/twin tulips.jpg" alt="Tulip 1">
+                <h3>Twin Tulips</h3>
+                <p>₹2000</p>
+                <button class="btn" onclick="addToCart('Mixed Tulips', 2000)">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="/pink tulips.jpg" alt="Tulip 2">
+                <h3>Pink Tulips</h3>
+                <p>₹1500</p>
+                <button class="btn" onclick="addToCart('Lavish Red Tulips', 1500)">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="/white tulips.jpg" alt="Tulip 3">
+                <h3>White Tulips</h3>
+                <p>₹1000</p>
+                <button class="btn" onclick="addToCart('Single Tulip', 1000)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <!-- Orchids Section -->
+    <section id="orchids">
+        <h2>Orchids</h2>
+        <div class="box-container">
+            <div class="box">
+                <img src="purple orchid.jpg" alt="Orchid 1">
+                <h3>Purple Orchids</h3>
+                <p>₹1000</p>
+                <button class="btn" onclick="addToCart('Mixed Orchids', 1000)">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="pink orchid.jpg" alt="Orchid 2">
+                <h3>Pink Orchids</h3>
+                <p>₹1200</p>
+                <button class="btn" onclick="addToCart('Lavish Red Orchids', 1200)">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="white orchid.jpg" alt="Orchid 3">
+                <h3>White Orchid</h3>
+                <p>₹1900</p>
+                <button class="btn" onclick="addToCart('Single Orchid', 1900)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <!-- Lilies Section -->
+    <section id="lilies">
+        <h2>Lilies</h2>
+        <div class="box-container">
+            <div class="box">
+                <img src="/pink lily.jpg" alt="Lily 1">
+                <h3>Pink Lilies</h3>
+                <p>₹1500</p>
+                <button class="btn" onclick="addToCart('Mixed Lilies', 1500)">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="/orange lily.jpg" alt="Lily 2">
+                <h3>Orange Lilies</h3>
+                <p>₹2000</p>
+                <button class="btn" onclick="addToCart('Lavish Red Lilies', 2000)">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="/white lily (1).jpeg" alt="Lily 3">
+                <h3> White Lily</h3>
+                <p>₹1900</p>
+                <button class="btn" onclick="addToCart('Single Lily', 1900)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <!-- Cart Modal -->
+    <div class="cart-modal" style="display: none;">
+        <h2>Cart</h2>
+        <div class="cart-list"></div>
+        <button class="btn" onclick="checkout()">Checkout</button>
+    </div>
+    <footer>
+        <p>&copy; 2024 Blooming Delights Flower Store. All rights reserved.</p>
+    </footer>
+    <script src="product.js"></script>
+</body>
+</html>
